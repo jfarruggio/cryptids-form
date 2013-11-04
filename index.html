@@ -62,27 +62,76 @@
 </div>
 
 
+<div class="commerce" id="commerce">
 <div class="container">
-    <fieldset class="row">
-        <legend class="col-sm-3">About You</legend>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder="Your Name">
-            <input type="text" class="form-control" placeholder="Your Name">
-            <input type="text" class="form-control" placeholder="Your Name">
-        </div>
-    </fieldset>
-    <fieldset class="row">
-        <legend class="col-sm-3">Accessories</legend>
-        <div class="col-sm-9">
-            <input id="nosering" type="checkbox">
-            <label for="nosering">Nosering</label>
-        </div>
-    </fieldset>
-    <fieldset class="row">
-        <div class="col-sm-9 col-sm-offset-3">
-        <button class="btn btn-primary" type="submit">Buy One</button>
-        </div>
-    </fieldset>
+    <form>
+        <fieldset class="about row">
+            <legend class="col-sm-3">About you</legend>
+            <div class="col-sm-9">
+                <input class="form-control" type="text" name="Field3" placeholder="Your name" required>
+                <input class="form-control" type="email" name="Field4" placeholder="Your email address" required>
+                <input class="form-control" type="phone" name="Field5" placeholder="Your phone number">
+            </div>
+        </fieldset>
+
+        <fieldset class="accessories row radio-check">
+            <legend class="col-sm-3">Accessories</legend>
+            <div class="col-sm-9">
+                <input id="nosering" name="Field6" type="checkbox" value="Nosering">
+                <label for="nosering"><i class="glyphicon glyphicon-ok"></i>Nosering</label>
+
+                <input id="axe" name="Field7" type="checkbox" value="Axe">
+                <label for="axe"><i class="glyphicon glyphicon-ok"></i>Axe</label>
+
+                <input id="face-paint" name="Field8" type="checkbox" value="Face Paint">
+                <label for="face-paint" ><i class="glyphicon glyphicon-ok"></i>Face paint</label>
+
+                <input id="xl-horns" name="Field9" type="checkbox" value="XL Horns">
+                <label for="xl-horns" ><i class="glyphicon glyphicon-ok"></i>XL horns</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="currency row radio-check">
+            <legend class="col-sm-3">Currency</legend>
+            <div class="col-sm-9">
+                <input id="usd" name="Field1" type="radio" value="USD" required>
+                <label for="usd"><i class="glyphicon glyphicon-usd"></i>USD</label>
+
+                <input id="gbp" name="Field1" type="radio" value="GBP" required>
+                <label for="gbp"><i class="glyphicon glyphicon-gbp"></i>GBP</label>
+
+                <input id="euro" name="Field1" type="radio" value="Euro" required>
+                <label for="euro" ><i class="glyphicon glyphicon-euro"></i>Euro</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="payment row">
+            <legend class="col-sm-3">Payment type</legend>
+            <div class="col-sm-3">
+                <select class="form-control" name="Field106">
+                    <option value="amex">Amex</option>
+                    <option value="visa">Visa</option>
+                    <option value="mc">MasterCard</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="spell row">
+            <legend class="col-sm-3">Custom spell</legend>
+            <div class="col-sm-9">
+                <textarea name="Field109" class="form-control" placeholder="e.g. By the power of Grayskull…"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset class="row">
+            <div class="col-sm-9 col-sm-offset-3">
+                <button class="btn btn-primary" type="submit">Buy one</button>
+            </div>
+        </fieldset>
+
+        <input type="hidden" id="idstamp" name="idstamp" value="ZD0elKpkwPO62i6HuqNHo82plv6ZqsZCn8CF7oOJWL0=" />
+    </form>
+</div>
 </div>
 
 </body>
